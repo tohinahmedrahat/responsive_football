@@ -1,0 +1,240 @@
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* utility */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+/* header section */
+.header_section {
+  background-color: #2d25a0;
+  margin: 0;
+  padding: 0;
+}
+/* intro */
+.intro {
+  display: flex;
+  align-content: center;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+/* intro_info */
+.intro_info h1 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  margin-left: 156px;
+  margin-right: 102px;
+}
+/* intro a */
+.intro_info a {
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 156px;
+  background-color: #e02c6d;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 2s, font-size 2s;
+}
+/* intro info a hover effect */
+.intro_info a:hover {
+  background-color: grey;
+  font-size: 18px;
+}
+/* intro_info span*/
+.intro_info span {
+  padding-left: 5px;
+}
+/* intro_img */
+.intro_img {
+  margin-right: 46px;
+  margin-top: 153px;
+  padding-bottom: 86px;
+  transition: transform 2s;
+}
+/* intro_img hover transform effect*/
+.intro_img:hover {
+  transform: scale(1.1);
+}
+/* player_list */
+.player_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 70px;
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
+  margin-left: 100px;
+}
+/* player */
+.player {
+  width: 330px;
+  box-shadow: 9px 7px 15px #eeeeee;
+}
+/* player img*/
+.player_img {
+  padding: 15px;
+}
+/* player name*/
+.player_name {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+/* player details p*/
+.player_dteal p {
+  color: #6c6c6c;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* Highlights section*/
+.Highlights {
+  display: flex;
+  align-content: center;
+  margin-top: 165px;
+  align-items: center;
+}
+
+/* Highlights info*/
+.Highlights_info {
+  width: 469px;
+  margin-left: 160px;
+  margin-right: 66px;
+}
+
+/* Highlights info h1*/
+.Highlights_info h1 {
+  font-size: 48px;
+  line-height: 60px;
+  color: #0a0826;
+  margin-bottom: 8px;
+}
+
+/* Highlights info p*/
+.Highlights_info p {
+  color: #6c6c6c;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+/* Highlights info a*/
+.Highlights_info a {
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #e02c6d;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: font-size 2s;
+}
+/* Highlights info a*/
+.Highlights_info a:hover {
+  background-color: grey;
+  font-size: 20px;
+}
+/* footer style */
+/* footer_head */
+.footer_head {
+  text-align: center;
+  margin-top: 158px;
+  margin-bottom: 20px;
+}
+/* footer_logo */
+.footer_logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* footer_logo img */
+.footer_logo img {
+  width: 32px;
+  height: 32px;
+  margin-right: 14px;
+  transition: transform 2s;
+}
+.social_icon:hover img {
+  transform: scale(2);
+}
+/* footer_copyright */
+.footer_copyright {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+/* media query  */
+
+/* For mobile device  */
+@media only screen and (max-width: 488px) {
+  body {
+    margin: 0px;
+  }
+  .intro {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .intro_info h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 80px;
+    /* margin-right: 66px; */
+    margin-left: 16px;
+    margin-top: 112px;
+    margin-bottom: 30px;
+  }
+  /* intro a */
+  .intro_info a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 16px;
+    background-color: #e02c6d;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  /* intro info a hover effect */
+  .intro_info a:hover {
+    background-color: grey;
+  }
+  /* intro_img */
+  .intro_img {
+    margin: 53px 16px;
+    padding-bottom: 86px;
+  }
+  .intro_img img {
+    width: 329px;
+  }
+  .player_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 15px;
+    grid-column-gap: 30px;
+    margin-left: 40px;
+    margin-right: 16px;
+  }
+  .Highlights {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Highlights_info {
+    width: 329px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 29px;
+  }
+  .Highlights_img img {
+    width: 328px;
+  }
+  .footer_head img {
+    width: 329px;
+  }
+  .footer_logo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
