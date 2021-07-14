@@ -212,7 +212,7 @@ body {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 15px;
     grid-column-gap: 30px;
-    margin-left: 40px;
+    margin-left: 16px;
     margin-right: 16px;
   }
   .Highlights {
